@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <title>Eve|Dashboard</title>
+  <title>Eve|Data</title>
 </head>
 <body>
 
@@ -44,23 +44,54 @@
   </div>
 </nav>
 
-  <h1>Dashboard</h1>
-  <table id="container">
-    <tr>
-      <th>Date</th>
-      <th>Total Sales</th>
-      <th>Transaction Count</th>
-      <th>Average Transaction</th>
-      <th>Commission</th>
-      <th>Markup</th>
-      <th>Bill Backs</th>
-      <th>Write-offs</th>
-      <th>Markdown</th>
-      <th>Price Override</th>
-      <th>Cash Purchase</th>
-      <th>EDI</th>
-    </tr>
-  </table>
+  <h1>Enter Data</h1>
+  <form action="#" id="new-day-form">
+    <div>
+      <label for="total_sales">Total Sales:</label>
+      <input type="text" name="total_sales" id="total_sales"/>
+    </div>
+    <div>
+      <label for="transaction_count">Transaction Count:</label>
+      <input type="text" name="transaction_count" id="transaction_count" />
+    </div>
+    <div>
+      <label for="average_transaction">Average Transaction:</label>
+      <input type="text" name="average_transaction" id="average_transaction" />
+    </div>
+    <div>
+      <label for="commission">Commission:</label>
+      <input type="text" name="commission" id="commission" />
+    </div>
+    <div>
+      <label for="markup">Markup:</label>
+      <input type="text" name="markup" id="markup" />
+    </div>
+    <div>
+      <label for="bill_backs">Bill Backs:</label>
+      <input type="text" name="bill_backs" id="bill_backs" />
+    </div>
+    <div>
+      <label for="write_offs">Write-offs:</label>
+      <input type="text" name="write_offs" id="write_offs" />
+    </div>
+    <div>
+      <label for="mark_down">Mark Down:</label>
+      <input type="text" name="mark_down" id="mark_down" />
+    </div>
+    <div>
+      <label for="price_override">Price Override:</label>
+      <input type="text" name="price_override" id="price_override" />
+    </div>
+    <div>
+      <label for="cash_purchase">Cash Purchase:</label>
+      <input type="text" name="cash_purchase" id="cash_purchase" />
+    </div>
+    <div>
+      <label for="electronic_direct">EDI:</label>
+      <input type="text" name="electronic_direct" id="electronic_direct" />
+    </div>
+    <button>Submit</button>
+  </form>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
