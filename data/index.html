@@ -9,16 +9,13 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="../">Eve</a>
+  <a class="navbar-brand" href="#">Eve</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
       </li>
@@ -44,59 +41,97 @@
   </div>
 </nav>
 
+<div class="container">
   <h1>Enter Data</h1>
-  <form action="#" id="new-day-form">
-    <div>
-      <label for="total_sales">Total Sales:</label>
-      <input type="text" name="total_sales" id="total_sales"/>
+  <form action="../dashboard" id="new-day-form">
+    
+    <div class="form-group row">
+      <label for="total_sales" class="col-4 col-form-label">Total Sales:</label>
+      <div class="col-4">
+        <input class="form-control" type="text" name="total_sales" id="total_sales"/>
+      </div>
     </div>
-    <div>
-      <label for="transaction_count">Transaction Count:</label>
-      <input type="text" name="transaction_count" id="transaction_count" />
-    </div>
-    <div>
-      <label for="average_transaction">Average Transaction:</label>
-      <input type="text" name="average_transaction" id="average_transaction" />
-    </div>
-    <div>
-      <label for="commission">Commission:</label>
-      <input type="text" name="commission" id="commission" />
-    </div>
-    <div>
-      <label for="markup">Markup:</label>
-      <input type="text" name="markup" id="markup" />
-    </div>
-    <div>
-      <label for="bill_backs">Bill Backs:</label>
-      <input type="text" name="bill_backs" id="bill_backs" />
-    </div>
-    <div>
-      <label for="write_offs">Write-offs:</label>
-      <input type="text" name="write_offs" id="write_offs" />
-    </div>
-    <div>
-      <label for="mark_down">Mark Down:</label>
-      <input type="text" name="mark_down" id="mark_down" />
-    </div>
-    <div>
-      <label for="price_override">Price Override:</label>
-      <input type="text" name="price_override" id="price_override" />
-    </div>
-    <div>
-      <label for="cash_purchase">Cash Purchase:</label>
-      <input type="text" name="cash_purchase" id="cash_purchase" />
-    </div>
-    <div>
-      <label for="electronic_direct">EDI:</label>
-      <input type="text" name="electronic_direct" id="electronic_direct" />
-    </div>
-    <button>Submit</button>
-  </form>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="./script.js"></script>
+    <div class="form-group row">
+      <label for="transaction_count" class="col-4 col-form-label">Transaction Count:</label>
+      <div class="col-4">
+        <input class="form-control" type="text" name="transaction_count" id="transaction_count"/>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="average_transaction" class="col-4 col-form-label">Average Transaction:</label>
+      <div class="col-4">
+        <input class="form-control" type="text" name="average_transaction" id="average_transaction"/>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="commission" class="col-4 col-form-label">Commission:</label>
+      <div class="col-4">
+        <input class="form-control" type="text" name="commission" id="commission"/>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="markup" class="col-4 col-form-label">Markup:</label>
+      <div class="col-4">
+        <input class="form-control" type="text" name="markup" id="markup"/>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="bill_backs" class="col-4 col-form-label">Bill Backs:</label>
+      <div class="col-4">
+        <input class="form-control" type="text" name="bill_backs" id="bill_backs"/>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="write_offs" class="col-4 col-form-label">Write-offs:</label>
+      <div class="col-4">
+        <input class="form-control" type="text" name="write-offs" id="write_offs"/>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="mark_down" class="col-4 col-form-label">Mark Down:</label>
+      <div class="col-4">
+        <input class="form-control" type="text" name="mark_down" id="mark_down"/>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="price_override" class="col-4 col-form-label">Price Override:</label>
+      <div class="col-4">
+        <input class="form-control" type="text" name="price_override" id="price_override"/>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="cash_purchase" class="col-4 col-form-label">Cash Purchase:</label>
+      <div class="col-4">
+        <input class="form-control" type="text" name="cash_purchase" id="cash_purchase"/>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="electronic_direct" class="col-4 col-form-label">EDI:</label>
+      <div class="col-4">
+        <input class="form-control" type="text" name="electronic_direct" id="electronic_direct"/>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>

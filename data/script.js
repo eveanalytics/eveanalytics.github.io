@@ -1,6 +1,6 @@
 $(document).ready(function() {
   const $container = $("#container");
-  $.getJSON("http://localhost:3000/report").then(function(report) {
+  $.getJSON("https://eveapp-api.herokuapp.com/report").then(function(report) {
     report.forEach(function(row) {
       let $newRow = $("<tr>"),
           $date = $("<td>", {
@@ -64,7 +64,7 @@ $(document).ready(function() {
   });
 
   $("#new-day-form").on("submit", function(e) {
-    e.preventDefault();
+    // e.preventDefault();
     const total_sales = $("#total_sales").val();
     const transaction_count = $("#transaction_count").val();
     const average_transaction = $("#average_transaction").val();
@@ -76,11 +76,7 @@ $(document).ready(function() {
     const price_override = $("#price_override").val();
     const cash_purchase = $("#cash_purchase").val();
     const electronic_direct = $("#electronic_direct").val();
-    $.post("http://localhost:3000/report", { total_sales, transaction_count, average_transaction, commission, markup, bill_backs, write_offs, mark_down, price_override, cash_purchase, electronic_direct }).then(function(fish) {
-      // let $newFish = $("<li>", {
-      //   text: `${fish.name} ${fish.type}`
-      // });
-      // $container.append($newFish);
+    $.post("https://eveapp-api.herokuapp.com/report", { total_sales, transaction_count, average_transaction, commission, markup, bill_backs, write_offs, mark_down, price_override, cash_purchase, electronic_direct }).then(function(fish) {
       $("#new-day-form").trigger("reset");
     });
   });
@@ -92,7 +88,7 @@ $(document).ready(function() {
     const type = $
       .ajax({
         method: "DELETE",
-        url: `http://localhost:3000/report/${id}`
+        url: `https://eveapp-api.herokuapp.com/report/${id}`
       })
       .then(function() {
         $(e.target)
