@@ -5,6 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <title>Eve | Dashboard</title>
+  <style>
+    .greyyellow {
+      background-color: #eeece1;
+    }
+    .greyorange {
+      background-color: #c4bc99;
+    }
+    .greygreen {
+      background-color: #d8e3be;
+    }
+    .yellow {
+      background-color: #fffd38;
+    }
+    .greyred {
+      background-color: #d99695;
+    }
+    .mediumgreen {
+      background-color: #c4d69e;
+    }
+    .grey {
+      background-color: #d9d9d9;
+    }
+    .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+      border: 1px solid black;
+    }
+    .greyblue {
+      background-color: #dbeef3;
+    }
+    .orange {
+      background-color: #f5964f;
+    }
+    .darkorange {
+      background-color: #948957;
+    }
+    .purple {
+      background-color: #7b75eb;
+    }
+    .brightgreen {
+      background-color: #83f539;
+    }
+    .darkblue {
+      background-color: #376bfb;
+    }
+  </style>
 </head>
 <body>
 
@@ -41,33 +85,322 @@
   </div>
 </nav>
 
-<h1 class="text-center m-4">Dashboard</h1>
+<h1 class="text-center m-4">December 2018</h1>
 
-<table class="table">
+<table class="table table-bordered table-responsive">
   <thead>
     <tr>
-      <th scope="col">Date</th>
-      <th scope="col">Total Sales</th>
-      <th scope="col">Transaction Count</th>
-      <th scope="col">Average Transaction</th>
-      <th scope="col">Commission</th>
-      <th scope="col">Markup</th>
-      <th scope="col">Bill Backs</th>
-      <th scope="col">Write-offs</th>
-      <th scope="col">Markdown</th>
-      <th scope="col">Price Override</th>
-      <th scope="col">Cash Purchase</th>
-      <th scope="col">EDI</th>
+      <th scope="col"></th>
+      <th scope="col" colspan="2" class="greyyellow">Cash Purchases</th>
+      <th scope="col" colspan="2" class="greyorange">Frito Lay/Ice/PBs</th>
+      <th scope="col" colspan="2" class="greyorange">EDI</th>
+      <th scope="col" colspan="2" class="greygreen">Daily Total</th>
+      <th scope="col" colspan="2" class="greyorange">MTD</th>
+      <th scope="col" class="yellow">BillBacks</th>
+      <th scope="col" colspan="2" class="greyorange">MTD</th>
+      <th scope="col" class="greyred">Price Override</th>
+      <th scope="col" class="greyred">Markdowns</th>
+      <th scope="col" class="greyred">WriteOffs</th><th scope="col" class="greygreen">Commissions</th>
+      <th scope="col" class="greygreen">MarkUps</th>
+      <th scope="col" class="greygreen">Sales</th>
+      <th scope="col" class="mediumgreen">MTD Sales</th>
+      <th scope="col" class="greyorange">BOH</th>
+      <th scope="col" class="yellow">Purchases</th>
+      <th scope="col" class="yellow">MO1 Margin</th>
+      <th scope="col" class="greyred">BOH Adjust</th>
+      <th scope="col" class="grey"></th>
       <th scope="col">Delete</th>
     </tr>
-  </thead><tbody id="container">
+    <tr>
+      <th scope="col"></th>
+      <th scope="col" class="greyyellow">Cost</th>
+      <th scope="col" class="greyyellow">Retail</th>
+      <th scope="col" class="greyorange">Cost</th>
+      <th scope="col" class="greyorange">Retail</th>
+      <th scope="col" class="greyorange">Cost</th>
+      <th scope="col" class="greyorange">Retail</th>
+      <th scope="col" class="greygreen">Cost</th>
+      <th scope="col" class="greygreen">Retail</th>
+      <th scope="col" class="greyorange">Cost</th>
+      <th scope="col" class="greyorange">Retail</th>
+      <th scope="col" class="yellow">Cost</th>
+      <th scope="col" class="greyorange">Cost</th>
+      <th scope="col" class="greyorange">Retail</th>
+      <th scope="col" class="greyred">Retail</th>
+      <th scope="col" class="greyred">Retail</th>
+      <th scope="col" class="greyred">Retail</th>
+      <th scope="col" class="greygreen">Daily</th>
+      <th scope="col" class="greygreen">Daily</th>
+      <th scope="col" class="greygreen">Daily</th>
+      <th scope="col" class="mediumgreen"></th>
+      <th scope="col" class="greyorange">$88,903.00</th>
+      <th scope="col" class="yellow"></th>
+      <th scope="col" class="yellow"></th>
+      <th scope="col" class="greyred"></th>
+      <th scope="col" class="grey">$0.00</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody id="container">
+
   </tbody>
 </table>
+
+<table class="table table-bordered table-responsive">
+    <thead>
+  
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td></td>
+        <td></td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="purple">?.??</td>
+        <td></td>
+        <td class="purple">?.??</td>
+        <td></td>
+        <td class="purple">?.??</td>
+        <td></td>
+        <td class="brightgreen">?.??</td>
+        <td></td>
+        <td class="brightgreen">?.??</td>
+        <td>?.??</td>
+        <td></td>
+        <td class="brightgreen">?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td></td>
+        <td>?.??</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="orange">?.??</td>
+        <td></td>
+        <td class="orange">?.??</td>
+        <td></td>
+        <td class="orange">?.??</td>
+        <td></td>
+        <td class="orange">?.??</td>
+        <td></td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td></td>
+        <td class="orange">?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="greyblue">C</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td></td>
+        <td></td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td>?.??</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="greyblue">D</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td>?.??</td>
+        <td class="darkblue">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td>?.??</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="greyblue">T</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td>?.??</td>
+        <td class="darkblue">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td class="orange">?.??</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="greyblue">B</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="purple">?.??</td>
+        <td></td>
+        <td class="darkorange">?.??</td>
+        <td></td>
+        <td></td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="darkorange">?.??</td>
+        <td class="brightgreen">?.??</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>?.??</td>
+        <td></td>
+        <td></td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td></td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td></td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td>?.??</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="./script.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
