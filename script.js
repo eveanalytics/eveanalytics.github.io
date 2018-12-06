@@ -616,83 +616,83 @@ $(document).ready(function() {
         class: "greyyellow"
       }), 
       $cashPurchasesRetail = $("<td>", {
-        text: `*${cash_purchases_retail_sum}`,
+        text: `*${floatToMoney(cash_purchases_retail_sum)}`,
         class: "greyyellow"
       }),
       $fritoLayIcePBsCost = $("<td>", {
-        text: `*${frito_lay_ice_pbs_cost_sum}`,
+        text: `*${floatToMoney(frito_lay_ice_pbs_cost_sum)}`,
         class: "greyyellow"
       }),
       $fritoLayIcePBsRetail = $("<td>", {
-        text: `*${frito_lay_ice_pbs_retail_sum}`,
+        text: `*${floatToMoney(frito_lay_ice_pbs_retail_sum)}`,
         class: "greyyellow"
       }),
       $ediCost = $("<td>", {
-        text: `*${edi_cost_sum}`,
+        text: `*${floatToMoney(edi_cost_sum)}`,
         class: "greyyellow"
       }),
       $ediRetail = $("<td>", {
-        text: `*${edi_retail_sum}`,
+        text: `*${floatToMoney(edi_retail_sum)}`,
         class: "greyyellow"
       }),
       $dailyTotalCost = $("<td>", {
-        text: `*${dailyTotalCost_sum}`,
+        text: `*${floatToMoney(dailyTotalCost_sum)}`,
         class: "greyyellow"
       }),
       $dailyTotalRetail = $("<td>", {
-        text: `*${dailyTotalRetail_sum}`,
+        text: `*${floatToMoney(dailyTotalRetail_sum)}`,
         class: "greyyellow"
       }),
       $mtdCost = $("<td>", {
-        text: `*${currentMTDCostTotal}`,
+        text: `*${floatToMoney(currentMTDCostTotal)}`,
         class: "greyyellow",
         "data-toggle": "tooltip","data-placement": "top","title": "Sum of Daily Total Cost from beginning of the month to current day"
       }),
       $mtdRetail = $("<td>", {
-        text: `*${currentMTDRetailTotal}`,
+        text: `*${floatToMoney(currentMTDRetailTotal)}`,
         class: "greyyellow",
         "data-toggle": "tooltip","data-placement": "top","title": "Sum of Daily Total Retail from beginning of the month to current day"
       }),
       $billbacks = $("<td>", {
-        text: `*${billbacks_sum}`,
+        text: `*${floatToMoney(billbacks_sum)}`,
         class: "greyyellow"
       }),
       $mtdCost2 = $("<td>", {
-        text: `*${currentMTDCostTotal}`,
+        text: `*${floatToMoney(currentMTDCostTotal)}`,
         class: "greyyellow",
         "data-toggle": "tooltip","data-placement": "top","title": "Sum of Daily Total Cost from beginning of the month to current day"
       }),
       $mtdRetail2 = $("<td>", {
-        text: `*${currentMTDRetailTotal}`,
+        text: `*${floatToMoney(currentMTDRetailTotal)}`,
         class: "greyyellow",
         "data-toggle": "tooltip","data-placement": "top","title": "Sum of Daily Total Retail from beginning of the month to current day"
       }),
       $priceOverride = $("<td>", {
-        text: `*${price_override_sum}`,
+        text: `*${floatToMoney(price_override_sum)}`,
         class: "greyyellow"
       }),
       $markdowns = $("<td>", {
-        text: `*${markdowns_sum}`,
+        text: `*${floatToMoney(markdowns_sum)}`,
         class: "greyyellow"
       }),
       $writeOffs = $("<td>", {
-        text: `*${write_offs_sum}`,
+        text: `*${(write_offs_sum)}`,
         class: "greyyellow"
       }),
       $commissions = $("<td>", {
-        text: `*${commissions_sum}`,
+        text: `*${floatToMoney(commissions_sum)}`,
         class: "greyyellow"
       }),
       $markups = $("<td>", {
-        text: `*${markups_sum}`,
+        text: `*${floatToMoney(markups_sum)}`,
         class: "greyyellow"
       }),
       $sales = $("<td>", {
-        text: `*${sales_sum}`,
+        text: `*${(sales_sum)}`,
         class: "greyyellow"
       }),
       $mtdSales = $("<td>", {
-        text: `*${currentMTDSalesTotal}`,
+        text: `*${floatToMoney(currentMTDSalesTotal)}`,
         class: "greyyellow",
         "data-toggle": "tooltip","data-placement": "top","title": "Sum of Sales from beginning of the month to current day"
       }),
@@ -716,7 +716,7 @@ $(document).ready(function() {
         class: "greyyellow"
       }),
       $unknown = $("<td>", {
-        text: `*${unknown_sum}`,
+        text: `*${floatToMoney(unknown_sum)}`,
         class: "greyyellow",
         "data-toggle": "tooltip","data-placement": "top","title": "Sales - Specified Amount"
       })
