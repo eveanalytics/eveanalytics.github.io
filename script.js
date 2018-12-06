@@ -612,7 +612,7 @@ $(document).ready(function() {
         "scope": "row",
       }),
       $cashPurchasesCost = $("<td>", {
-        text: `*${cash_purchases_cost_sum}`,
+        text: `*${floatToMoney(cash_purchases_cost_sum)}`,
         class: "greyyellow"
       }), 
       $cashPurchasesRetail = $("<td>", {
@@ -761,7 +761,7 @@ $(document).ready(function() {
   });
 
   $("#new-day-form").on("submit", function(e) {
-    e.preventDefault();
+    // e.preventDefault();
     const cash_purchases_cost = $("#cash_purchases_cost").val();
     const cash_purchases_retail = $("#cash_purchases_retail").val();
     const frito_lay_ice_pbs_cost = $("#frito_lay_ice_pbs_cost").val();
